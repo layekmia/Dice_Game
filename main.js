@@ -77,7 +77,7 @@ holdBtn.addEventListener('click', function(){
      document.getElementById(`score-${activePlayer}`).textContent = scores[activePlayer];
      
      // if score 100 acitive user will win
-     if(scores[activePlayer] >= 10){
+     if(scores[activePlayer] >= 100){
         gameWin();
      }else{
         switchPlayer();
