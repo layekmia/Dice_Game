@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output/tailwind.css">
+    <title>Ludu Game by JavaScript</title>
+</head>
+<body class="h-screen overflow-hidden flex items-center justify-center bg-gradient-to-l from-[#753682] from-0% to-[#bf2e34]">
+
+
+    <div class="md:h-[90vh] w-[95%] md:w-4/5 bg-[rgba(255,255,255,.35)] rounded-lg flex ">
+
+        <div id="player-0" class="w-1/2 active-player rounded-l-lg flex flex-col items-center justify-center text-center md:p-24 px-4 py-10">
+            <h2 class="text-2xl md:text-[40px] font-medium text-[#33333] mb-2.5 tracking-widest">PLAYER 1</h2>
+            <span id="score-0" class="mb-10 md:mb-auto text-5xl  md:text-7xl text-[#c7365f]">0</span>
+
+            <div class="p-2 md:p-5 bg-[#c7365f] rounded-md w-[95%] md:w-2/3 text-white ">
+                <p class="mb-1 md:mb-2.5 text-lg">CURRENT</p>
+                <span id="current-score-0" class="text-4xl">0</span>
+            </div>
+        </div>
+
+        <div id="player-1" class=" w-1/2  rounded-l-lg flex flex-col items-center justify-center text-center md:p-24 px-4 py-8">
+            <h2 class="text-2xl md:text-[40px] font-medium text-[#33333] mb-2.5 tracking-widest">PLAYER 2</h2>
+            <span id="score-1" class="mb-10 md:mb-auto  text-5xl  md:text-7xl text-[#c7365f]">0</span>
+
+            <div class="p-2 md:p-5 bg-[#c7365f] rounded-md w-[95%] md:w-2/3 text-white ">
+                <p class="mb-1 md:mb-2.5 text-lg">CURRENT</p>
+                <span id="current-score-1" class="text-4xl">0</span>
+            </div>
+        </div>
+
+        <!-- * buttons -->
+        <div class="absolute top-[45%] lg:top-1/4 left-1/2 -translate-x-1/2 ">
+            <img id="dice" src="" alt="" class=" w-16 md:w-auto md:h-[100px] ">
+        </div>
+         <button id="newGame" class="btn top-[20%] left-1/2 md:top-14 md:left-1/2 -translate-x-1/2">🔄 NEW GAME</button>
+         <button id="diceRoll" class="btn bottom-[15%] right-5 md:right-auto md:left-1/2 md:bottom-[30%]  md:-translate-x-1/2">🎲 ROLL DICE</button>
+         <button id="hold" class="btn bottom-[15%]  md:bottom-[20%] md:left-1/2 md:-translate-x-1/2">📥 HOLD</button>
+    </div>
+</body>
+<script src="./main.js"></script>
+</html>
